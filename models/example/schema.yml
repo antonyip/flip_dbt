@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+    - name: terra_daily_metrics
+      description: "A collection of daily terra metrics"
+      columns:
+          - name: metric_date
+            description: "The date the metric is recorded"
+            tests:
+                - not_null
+          - name: metric_type
+            description: "The type of metric."
+            tests:
+                - not_null
+          - name: metric_value
+            description: "The metric value."

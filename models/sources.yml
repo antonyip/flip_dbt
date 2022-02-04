@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: terra
+    schema: terra
+    database: FLIPSIDE
+    tables:
+      - name: airdrop_claims
+      - name: daily_balances
+      - name: gov_submit_proposals
+      - name: gov_vote
+      - name: nft_metadata
+      - name: oracle_prices
+      - name: reward
+      - name: staking
+      - name: swaps
+      - name: tax_rate
+      - name: transfers
+      - name: validator_labels
+      - name: validator_voting_power
+  - name: terra_sv
+    schema: terra_sv
+    database: FLIPSIDE
+    tables:
+      - name: blocks
+      - name: labels
+      - name: transitions
+      - name: transactions
+      - name: msgs
+      - name: msg_events
+  - name: ethereum
+    schema: ethereum
+    database: FLIPSIDE
+    tables:
+      - name: dex_liquidity_pools
+      - name: dex_swaps
+      - name: erc20_balances
+      - name: events_emitted
+      - name: nft_events
+      - name: nft_metadata
+      - name: token_prices_hourly
+      - name: transactions
+      - name: udm_events
+  - name: uniswapv3
+    schema: uniswapv3
+    database: FLIPSIDE
+    tables:
+      - name: lp_actions
+      - name: pools
+      - name: pool_stats
+      - name: positions
+      - name: position_collected_fees
+      - name: swaps
