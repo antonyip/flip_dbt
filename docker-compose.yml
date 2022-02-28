@@ -4,14 +4,14 @@ services:
   dbt_console:
     build: .
     volumes:
-      - .:/harmony
+      - .:/flipside
     env_file: 
       - .env
 
   dbt_docs:
     build: .
     volumes:
-      - .:/harmony
+      - .:/flipside
     ports:
       - 8080:8080
     expose:
